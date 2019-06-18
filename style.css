@@ -1,0 +1,27 @@
+body {
+    background-image: url(./images/codex.jpg);
+  }
+
+  .player2Section {
+      width: 800px;
+      height: 200;
+      border-color: black;
+      border-width: 5px;
+      padding: 20px;
+  }
+
+  .centreSection{
+      width: 800px;
+      height: 400px;
+      border-color: black;
+      border-width: 5px;
+      padding: 420px;
+  }
+
+  .player1Section {
+    width: 800px;
+    height: 200;
+    border-color: black;
+    border-width: 5px;
+    padding: 620px;
+}
