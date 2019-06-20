@@ -1,96 +1,34 @@
-class Boardgame {
-    constructor() {
+class Dice {
+    constructor(x, y) {
+       this.x = x 
+       this.y = y
+       this.width = 150
+       this.height = 150 
+       this.avocado = new Image()
+       this.avocado.src = "./images/dices/Avocado.png"
+       this.chili = new Image()
+       this.chili.src = "./images/dices/Chili.png"
+       this.chocolate = new Image()
+       this.chocolate.src = "./images/dices/Chocolate.png"
+       this.coyote = new Image()
+       this.coyote.src = "./images/dices/Coyote.png"
+       this.ocelot = new Image()
+       this.ocelot.src = "./images/dices/Ocelot.png"
+       this.tomato = new Image()
+       this.tomato.src = "./images/dices/Tomato.png"
+    }    
+    draw(face) {
 
+        ctx.drawImage([
+            this.avocado, 
+            this.chili, 
+            this.chocolate, 
+            this.coyote, 
+            this.ocelot, 
+            this.tomato][face], this.x, this.y, this.width, this.height)
+        dices.push(values[face])
     }
 }
-class CentreCards{
-
-}
-
-class DiscardedCards{
-
-}
-
-class DisplayedCardsPlayer1 {
-
-    
-}
-
-class DisplayedCardsPlayer2 {
-
-    
-}
-
-yellowCards {
-    [card1= "Chili", "Chocolate", "Chocolate", "Coyote", "Ocelot", "Ocelot"],
-    [card2= "Avocado", "Chili", "Chocolate", "Tomato", "Tomato"],
-    [card3= "Avocado", "Avocado", "Tomato", "Tomato"],
-    [card4= "Avocado", "Chili", "Coyote"],
-    [card5= "Chili", "Ocelot", "Tomato"],
-    [card6= "Chocolate", "Tomato"],
-    [card7= "Chili", "Ocelot"],
-    [card8= "Avocado"], 
-    [card9= "Ocelot"]
-}
-
-redCards {
-    [card10= "Chocolate", "Chocolate", "Ocelot", "Tomato", "Tomato", "Tomato"],
-    [card11= "Chili", "Chili", "Coyote", "Ocelot", "Tomato"],
-    [card12= "Avocado", "Ocelot", "Tomato", "Tomato"],
-    [card13= "Chocolate", "Coyote", "Coyote"],
-    [card14= "Chili", "Chocolate", "Tomato"],
-    [card15= "Avocado", "Tomato"],
-    [card16= "Chocolate", "Coyote"],
-    [card17= "Chili"],
-    [card18= "Tomato"]
-}
-
-brownCards {
-    [card19= "Avocado", "Chili", "Chili", "Coyote", "Coyote", "Tomato"],
-    [card20= "Avocado", "Chocolate", "Chocolate", "Coyote", "Tomato"],
-    [card21= "Chili", "Chocolate", "Ocelot", "Ocelot"],
-    [card22= "Avocado", "Coyote", "Tomato"],
-    [card23= "Avocado", "Chili", "Coyote"],
-    [card24= "Chocolate", "Tomato"],
-    [card25= "Avocado", "Chocolate"]
-    [card26= "Ocelot"],
-    [card27= "Chocolate",]
-}
 
 
-greenCards {
-    [card28 = "Avocado", "Chili", "Chocolate", "Coyote", "Coyote", "Coyote"],
-    [card29 = "Chili", "Chili", "Ocelot", "Ocelot", "Tomato"],
-    [card30 = "Chili", "Chili", "Chocolate", "Ocelot"],
-    [card31 = "Avocado", "Chocolate", "Ocelot"],
-    [card32 = "Chili", "Chocolate", "Coyote"],
-    [card33 = "Avocado", "Ocelot"],
-    [card34 = "Coyote", "Tomato"],
-    [card35 = "Coyote"],
-    [card36 = "Chili"]
-}
-
-blackCards {
-    [card37 = "Chili", "Coyote", "Coyote", "Ocelot", "Ocelot", "Tomato"]
-    [card38 = "Avocado", "Avocado", "Chili", "Chocolate", "Ocelot"]
-    [card39 = "Avocado", "Coyote", "Coyote", "Ocelot"]
-    [card40 = "Chili", "Chocolate", "Ocelot"]
-    [card41 = "Chocolate", "Tomato", "Tomato"]
-    [card42 = "Avocado", "Chili"]
-    [card43 = "Avocado", "Ocelot"]
-    [card44 = "Tomato"]
-    [card45 = "Avocado"]
-}
-
-blueCards {
-    [card46 = "Avocado", "Avocado", "Chocolate", "Chocolate", "Coyote", "Coyote"]
-    [card47 = "Avocado", "Chili", "Coyote", "Ocelot", "Tomato"]
-    [card48 = "Chocolate", "Coyote", "Ocelot", "Tomato"]
-    [card49 = "Avocado", "Ocelot", "Ocelot"]
-    [card50 = "Chili", "Coyote", "Ocelot"]
-    [card51 = "Avocado", "Chocolate"]
-    [card52 = "Avocado", "Chili"]
-    [card53 = "Chocolate"]
-    [card54 = "Coyote"]
-}
 
